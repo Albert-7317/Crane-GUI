@@ -7,7 +7,9 @@ val = 90
 #setting up the layout
 layout = [
     [sg.Button('Drop', image_filename = 'button.png'), sg.Button('Lift', image_filename = 'button.png')],
-    [sg.Slider(range = (0,180), default_value = val, size = (30,10), orientation = 'h', enable_events = True)]
+    [sg.Button(image_filename = 'Scale.png')],
+    [sg.Slider(range = (0,180), default_value = val, size = (36,10), orientation = 'h', enable_events = True)],
+    [sg.Button('Start')]
 ]
 
 #create the window
